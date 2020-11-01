@@ -216,7 +216,7 @@ def encryption(hex_msg, key_bin, key_hex):
     perm_msg = permutation(hex_msg, initial_permutation, 64)
     print("After first permutation the message is: ", bin2hex(perm_msg))
 
-    # fiestal round starting...
+    # fiestel round starting...
     # break the 64 bit message into 2 parts of 32 bit each
     l1 = perm_msg[0:32]
     r1 = perm_msg[32:64]
